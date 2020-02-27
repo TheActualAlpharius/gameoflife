@@ -134,12 +134,12 @@ int will_be_alive(struct universe *u, int column, int row){
 
 void print_statistics(struct universe *u){
 	float current = u->current_alive * 1000;
-	current = round(current);
+	current = roundf(current);
 	current /= 1000;
 	printf("%.3f%% of cells currently alive\n", current);
 	
 	float average = u->average_alive * 1000;
-	average = round(average);
+	average = roundf(average);
 	average /= 1000;
 	printf("%.3f%% of cells alive on average\n", average);
 }
