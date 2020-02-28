@@ -3,7 +3,7 @@ Files: gameoflife.c, gol.h, gol.c
 all: gameoflife.o libgol.so
 	gcc -o gameoflife gameoflife.c libgol.so -Wall -Wextra -pedantic -std=c11
 
-lobgol.so:
+libgol.so:
 	gcc -shared -o libgol.so -fPIC gol.c
 	
 
