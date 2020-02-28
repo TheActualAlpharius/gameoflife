@@ -57,7 +57,7 @@ int main(int argc, char *argv[]){
 	int nogInt = 5;
 	int zerocheck = 0;
 	if(nog != NULL){
-		for(int i = 0; i < sizeof(nog)/sizeof(char); i++){
+		for(size_t i = 0; i < sizeof(nog)/sizeof(char); i++){
 			if(nog[i] == '0'){
 				zerocheck = 1;
 			}
