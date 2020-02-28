@@ -1,7 +1,5 @@
-Files: gameoflife.c, gol.h, gol.c
-
 all: gameoflife.o libgol.so
-	gcc -o gameoflife gameoflife.c libgol.so -Wall -Wextra -pedantic -std=c11
+	gcc -o gameoflife gameoflife.c libgol.so -Wall -Wextra -pedantic -std=c11 -lm
 
 libgol.so:
 	gcc -shared -o libgol.so -fPIC gol.c -lm
